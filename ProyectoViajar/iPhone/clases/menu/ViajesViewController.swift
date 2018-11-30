@@ -69,6 +69,9 @@ class ViajesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         viaje4.viaje_imagen = UIImage(named: "colca")!
         
         self.arrayViajes.append(viaje1)
+        self.arrayViajes.append(viaje2)
+        self.arrayViajes.append(viaje3)
+        self.arrayViajes.append(viaje4)
         
 
         

@@ -7,7 +7,7 @@ target 'ProyectoViajar' do
 
   # Pods for ProyectoViajar
     pod 'Firebase/Core'
-    pod 'Firebase/Auth' 
-
+    pod 'Firebase/Auth'
+    pod 'GoogleMaps'
 
 end

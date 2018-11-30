@@ -21,6 +21,8 @@
 		67C5D18921AEF73600F57AFE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5D18821AEF73600F57AFE /* MenuViewController.swift */; };
 		67C5D1AB21AF3F1E00F57AFE /* ViajesBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5D1AA21AF3F1E00F57AFE /* ViajesBE.swift */; };
 		B50FE3826558A260077E6E06 /* Pods_ProyectoViajar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B8412E734AA978F4EA317D /* Pods_ProyectoViajar.framework */; };
+		D7A4E32121B1E3D6008C038F /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A4E32021B1E3D6008C038F /* LocationViewController.swift */; };
+		D7EF61A221B1C8CA0089E2E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7EF61A121B1C8CA0089E2E3 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,8 @@
 		85B8412E734AA978F4EA317D /* Pods_ProyectoViajar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProyectoViajar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B273FCB0A3F50D2CE9A65647 /* Pods-ProyectoViajar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoViajar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProyectoViajar/Pods-ProyectoViajar.debug.xcconfig"; sourceTree = "<group>"; };
 		CAE7DB36C2F4203AC8F5E5F4 /* Pods-ProyectoViajar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoViajar.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProyectoViajar/Pods-ProyectoViajar.release.xcconfig"; sourceTree = "<group>"; };
+		D7A4E32021B1E3D6008C038F /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		D7EF61A121B1C8CA0089E2E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +103,7 @@
 				67C5D17521AEE57100F57AFE /* iPhone */,
 				67C5D17421AEE56900F57AFE /* BL */,
 				67C5D17321AEE56200F57AFE /* BE */,
-				67C5D15D21AEE53800F57AFE /* ProyectoViajar */,
+				67C5D15D21AEE53800F57AFE /* Configuration */,
 				67C5D15C21AEE53800F57AFE /* Products */,
 				3F53B9B0F90B1ADE0DE109A2 /* Pods */,
 				2958610F7CF8BE733DA29F52 /* Frameworks */,
@@ -114,16 +118,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		67C5D15D21AEE53800F57AFE /* ProyectoViajar */ = {
+		67C5D15D21AEE53800F57AFE /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				67C5D15E21AEE53800F57AFE /* AppDelegate.swift */,
-				67C5D16821AEE53A00F57AFE /* Assets.xcassets */,
-				67C5D16A21AEE53A00F57AFE /* LaunchScreen.storyboard */,
+				D7EF61A121B1C8CA0089E2E3 /* GoogleService-Info.plist */,
 				67C5D16D21AEE53A00F57AFE /* Info.plist */,
 				67C5D16521AEE53800F57AFE /* ProyectoViajar.xcdatamodeld */,
 			);
-			path = ProyectoViajar;
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 		67C5D17321AEE56200F57AFE /* BE */ = {
@@ -145,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				67C5D18A21AF290100F57AFE /* recursos */,
-				67C5D17921AEE59B00F57AFE /* vistas */,
 				67C5D17821AEE59100F57AFE /* clases */,
 			);
 			path = iPhone;
@@ -178,6 +179,8 @@
 		67C5D17921AEE59B00F57AFE /* vistas */ = {
 			isa = PBXGroup;
 			children = (
+				67C5D15E21AEE53800F57AFE /* AppDelegate.swift */,
+				67C5D16A21AEE53A00F57AFE /* LaunchScreen.storyboard */,
 				67C5D17A21AEE5BB00F57AFE /* Login.storyboard */,
 			);
 			path = vistas;
@@ -200,6 +203,7 @@
 				67C2804221B17C4800480BE8 /* ViajesTableViewCell.swift */,
 				67C2804821B1831500480BE8 /* ViajesViewController.swift */,
 				67C2804A21B1993600480BE8 /* DetalleViewController.swift */,
+				D7A4E32021B1E3D6008C038F /* LocationViewController.swift */,
 			);
 			path = menu;
 			sourceTree = "<group>";
@@ -207,6 +211,8 @@
 		67C5D18A21AF290100F57AFE /* recursos */ = {
 			isa = PBXGroup;
 			children = (
+				67C5D17921AEE59B00F57AFE /* vistas */,
+				67C5D16821AEE53A00F57AFE /* Assets.xcassets */,
 			);
 			path = recursos;
 			sourceTree = "<group>";
@@ -254,6 +260,7 @@
 				67C5D15821AEE53800F57AFE /* Frameworks */,
 				67C5D15921AEE53800F57AFE /* Resources */,
 				131CE1D4BEC50C6781B2D967 /* [CP] Embed Pods Frameworks */,
+				3EE67A11EDDCE78FCB34BDE0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -303,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67C5D16C21AEE53A00F57AFE /* LaunchScreen.storyboard in Resources */,
+				D7EF61A221B1C8CA0089E2E3 /* GoogleService-Info.plist in Resources */,
 				67C5D16921AEE53A00F57AFE /* Assets.xcassets in Resources */,
 				67C5D17B21AEE5BB00F57AFE /* Login.storyboard in Resources */,
 			);
@@ -351,6 +359,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3EE67A11EDDCE78FCB34BDE0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ProyectoViajar/Pods-ProyectoViajar-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProyectoViajar/Pods-ProyectoViajar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -363,6 +393,7 @@
 				67C5D17D21AEE61C00F57AFE /* LoginViewController.swift in Sources */,
 				67C5D18921AEF73600F57AFE /* MenuViewController.swift in Sources */,
 				67C5D18621AEF21300F57AFE /* RegistrarViewController.swift in Sources */,
+				D7A4E32121B1E3D6008C038F /* LocationViewController.swift in Sources */,
 				67C5D16721AEE53800F57AFE /* ProyectoViajar.xcdatamodeld in Sources */,
 				67C5D15F21AEE53800F57AFE /* AppDelegate.swift in Sources */,
 				67C5D18421AEF20600F57AFE /* LogViewController.swift in Sources */,
@@ -505,7 +536,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ProyectoViajar/Info.plist;
+				INFOPLIST_FILE = Configuration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -523,7 +554,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ProyectoViajar/Info.plist;
+				INFOPLIST_FILE = Configuration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
