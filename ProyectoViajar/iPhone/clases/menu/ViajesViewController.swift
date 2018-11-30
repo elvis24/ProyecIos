@@ -97,6 +97,8 @@ class ViajesViewController: UIViewController, UITableViewDelegate, UITableViewDa
             controller.objViaje = sender as! ViajesBE
             
         }
+        
+        
     }
     
 
