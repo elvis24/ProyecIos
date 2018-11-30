@@ -10,6 +10,8 @@ import UIKit
 
 class DetalleViewController: UIViewController {
 
+    var objViaje : ViajesBE!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

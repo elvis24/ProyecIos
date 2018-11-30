@@ -16,7 +16,6 @@
 		67C5D16C21AEE53A00F57AFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67C5D16A21AEE53A00F57AFE /* LaunchScreen.storyboard */; };
 		67C5D17B21AEE5BB00F57AFE /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67C5D17A21AEE5BB00F57AFE /* Login.storyboard */; };
 		67C5D17D21AEE61C00F57AFE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5D17C21AEE61C00F57AFE /* LoginViewController.swift */; };
-		67C5D18121AEF17500F57AFE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67C5D18021AEF17500F57AFE /* GoogleService-Info.plist */; };
 		67C5D18421AEF20600F57AFE /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5D18321AEF20600F57AFE /* LogViewController.swift */; };
 		67C5D18621AEF21300F57AFE /* RegistrarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5D18521AEF21300F57AFE /* RegistrarViewController.swift */; };
 		67C5D18921AEF73600F57AFE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5D18821AEF73600F57AFE /* MenuViewController.swift */; };
@@ -36,7 +35,6 @@
 		67C5D16D21AEE53A00F57AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67C5D17A21AEE5BB00F57AFE /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		67C5D17C21AEE61C00F57AFE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		67C5D18021AEF17500F57AFE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		67C5D18321AEF20600F57AFE /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		67C5D18521AEF21300F57AFE /* RegistrarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarViewController.swift; sourceTree = "<group>"; };
 		67C5D18821AEF73600F57AFE /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 		67C5D15D21AEE53800F57AFE /* ProyectoViajar */ = {
 			isa = PBXGroup;
 			children = (
-				67C5D18021AEF17500F57AFE /* GoogleService-Info.plist */,
 				67C5D15E21AEE53800F57AFE /* AppDelegate.swift */,
 				67C5D16821AEE53A00F57AFE /* Assets.xcassets */,
 				67C5D16A21AEE53A00F57AFE /* LaunchScreen.storyboard */,
@@ -306,7 +303,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				67C5D16C21AEE53A00F57AFE /* LaunchScreen.storyboard in Resources */,
-				67C5D18121AEF17500F57AFE /* GoogleService-Info.plist in Resources */,
 				67C5D16921AEE53A00F57AFE /* Assets.xcassets in Resources */,
 				67C5D17B21AEE5BB00F57AFE /* Login.storyboard in Resources */,
 			);
