@@ -20,7 +20,10 @@ class ViajesTableViewCell: UITableViewCell {
     var objViajes = ViajesBE()
     
     func actualizarData() -> Void{
-        self.lblNombre.text="\(self.objViajes.viaje_nombre) \(self.objViajes.viaje_descripcion) \(self.objViajes.viaje_precio) \(self.objViajes.viaje_ciudad) \(self.objViajes.viaje_imagen)"
+        self.lblPrecio.text = objViajes.viaje_precio
+        self.lblNombre.text = objViajes.viaje_nombre
+        self.lblCiudad.text = objViajes.viaje_ciudad
+        self.imgViaje.image = objViajes.viaje_imagen
     }
     
     override func awakeFromNib() {

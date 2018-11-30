@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="und-uj-UTb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="und-uj-UTb">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -428,6 +429,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="NM7-h2-dH1"/>
                     </view>
+                    <connections>
+                        <outlet property="imgViaje" destination="sVR-qV-qS4" id="bIb-yk-iSA"/>
+                        <outlet property="lblCiudad" destination="vns-SY-YlR" id="mQn-zw-nzz"/>
+                        <outlet property="lblDescripcion" destination="OeO-ba-XAn" id="g9k-fs-utu"/>
+                        <outlet property="lblNombre" destination="W11-Fg-dSs" id="cGt-0B-6vP"/>
+                        <outlet property="lblPrecio" destination="hSl-Uz-LR3" id="VfV-Zw-ypQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="91W-Ry-TPD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -450,7 +458,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="420" height="420"/>
+        <image name="Image" width="210" height="210"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6KJ-dC-mKy"/>

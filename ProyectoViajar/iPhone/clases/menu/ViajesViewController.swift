@@ -87,6 +87,7 @@ class ViajesViewController: UIViewController, UITableViewDelegate, UITableViewDa
             
             let controller = segue.destination as! DetalleViewController
             controller.objViaje = sender as! ViajesBE
+            
         }
     }
     

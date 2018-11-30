@@ -10,13 +10,27 @@ import UIKit
 
 class DetalleViewController: UIViewController {
 
-    var objViaje : ViajesBE!
+    
+    @IBOutlet weak var imgViaje: UIImageView!
+    @IBOutlet weak var lblNombre: UILabel!
+    @IBOutlet weak var lblPrecio: UILabel!
+    @IBOutlet weak var lblCiudad: UILabel!
+    @IBOutlet weak var lblDescripcion: UILabel!
+    
+    var objViaje = ViajesBE()
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        // Do any additional setup after loading the view.
+        self.lblNombre.text = objViaje.viaje_nombre
+        self.lblCiudad.text = objViaje.viaje_ciudad
+        self.lblPrecio.text = objViaje.viaje_precio
+        self.lblDescripcion.text = objViaje.viaje_descripcion
+        self.imgViaje.image = objViaje.viaje_imagen
     }
 
     override func didReceiveMemoryWarning() {
