@@ -15,8 +15,8 @@ class ViajesBE: NSObject {
     var viaje_precio = String()
     var viaje_ciudad = String()
     var viaje_imagen = UIImage()
-    
-   
+    var viaje_latitud = Double()
+    var viaje_longitud = Double()
     
 }
 
