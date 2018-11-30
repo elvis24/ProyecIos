@@ -46,6 +46,8 @@ class ViajesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         viaje1.viaje_precio = "100$"
         viaje1.viaje_descripcion = "ciudad de las 7 maravillas"
         viaje1.viaje_imagen = UIImage(named: "machu")!
+        viaje1.viaje_latitud = -33.86
+        viaje1.viaje_longitud = 151.20
         
         let viaje2 = ViajesBE()
         viaje2.viaje_nombre = "Mancora"
@@ -53,6 +55,8 @@ class ViajesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         viaje2.viaje_precio = "1000$"
         viaje2.viaje_descripcion = "Ricas playas para disfrutar"
         viaje2.viaje_imagen = UIImage(named: "mancora")!
+        viaje2.viaje_latitud = -33.86
+        viaje2.viaje_longitud = 151.20
         
         let viaje3 = ViajesBE()
         viaje3.viaje_nombre = "Mancora"
@@ -60,6 +64,8 @@ class ViajesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         viaje3.viaje_precio = "1000$"
         viaje3.viaje_descripcion = "Ricas playas para disfrutar"
         viaje3.viaje_imagen = UIImage(named: "mancora")!
+        viaje3.viaje_latitud = -33.86
+        viaje3.viaje_longitud = 151.20
         
         let viaje4 = ViajesBE()
         viaje4.viaje_nombre = "Cañon del Colca"
@@ -67,6 +73,8 @@ class ViajesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         viaje4.viaje_precio = "1000$"
         viaje4.viaje_descripcion = "Bonitas montañas para pasear"
         viaje4.viaje_imagen = UIImage(named: "colca")!
+        viaje4.viaje_latitud = -33.86
+        viaje4.viaje_longitud = 151.20
         
         self.arrayViajes.append(viaje1)
         self.arrayViajes.append(viaje2)
