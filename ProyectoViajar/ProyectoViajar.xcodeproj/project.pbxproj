@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		67C2804321B17C4800480BE8 /* ViajesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C2804221B17C4800480BE8 /* ViajesTableViewCell.swift */; };
+		67C2804921B1831500480BE8 /* ViajesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C2804821B1831500480BE8 /* ViajesViewController.swift */; };
+		67C2804B21B1993600480BE8 /* DetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C2804A21B1993600480BE8 /* DetalleViewController.swift */; };
+		67C5D15F21AEE53800F57AFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5D15E21AEE53800F57AFE /* AppDelegate.swift */; };
+		67C5D16721AEE53800F57AFE /* ProyectoViajar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 67C5D16521AEE53800F57AFE /* ProyectoViajar.xcdatamodeld */; };
+		67C5D16921AEE53A00F57AFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67C5D16821AEE53A00F57AFE /* Assets.xcassets */; };
+		67C5D16C21AEE53A00F57AFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67C5D16A21AEE53A00F57AFE /* LaunchScreen.storyboard */; };
+		67C5D17B21AEE5BB00F57AFE /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67C5D17A21AEE5BB00F57AFE /* Login.storyboard */; };
+		67C5D17D21AEE61C00F57AFE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5D17C21AEE61C00F57AFE /* LoginViewController.swift */; };
+		67C5D18121AEF17500F57AFE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67C5D18021AEF17500F57AFE /* GoogleService-Info.plist */; };
+		67C5D18421AEF20600F57AFE /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5D18321AEF20600F57AFE /* LogViewController.swift */; };
+		67C5D18621AEF21300F57AFE /* RegistrarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5D18521AEF21300F57AFE /* RegistrarViewController.swift */; };
+		67C5D18921AEF73600F57AFE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5D18821AEF73600F57AFE /* MenuViewController.swift */; };
+		67C5D1AB21AF3F1E00F57AFE /* ViajesBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5D1AA21AF3F1E00F57AFE /* ViajesBE.swift */; };
+		B50FE3826558A260077E6E06 /* Pods_ProyectoViajar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B8412E734AA978F4EA317D /* Pods_ProyectoViajar.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		67C2804221B17C4800480BE8 /* ViajesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViajesTableViewCell.swift; sourceTree = "<group>"; };
+		67C2804821B1831500480BE8 /* ViajesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViajesViewController.swift; sourceTree = "<group>"; };
+		67C2804A21B1993600480BE8 /* DetalleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleViewController.swift; sourceTree = "<group>"; };
+		67C5D15B21AEE53800F57AFE /* ProyectoViajar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoViajar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67C5D15E21AEE53800F57AFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		67C5D16621AEE53800F57AFE /* ProyectoViajar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProyectoViajar.xcdatamodel; sourceTree = "<group>"; };
+		67C5D16821AEE53A00F57AFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67C5D16B21AEE53A00F57AFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		67C5D16D21AEE53A00F57AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67C5D17A21AEE5BB00F57AFE /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		67C5D17C21AEE61C00F57AFE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		67C5D18021AEF17500F57AFE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		67C5D18321AEF20600F57AFE /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		67C5D18521AEF21300F57AFE /* RegistrarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarViewController.swift; sourceTree = "<group>"; };
+		67C5D18821AEF73600F57AFE /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		67C5D19321AF3D8100F57AFE /* CSMTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMTextView.swift; sourceTree = "<group>"; };
+		67C5D19421AF3D8100F57AFE /* CSMLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMLabel.swift; sourceTree = "<group>"; };
+		67C5D19521AF3D8100F57AFE /* CSMDateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMDateManager.swift; sourceTree = "<group>"; };
+		67C5D19621AF3D8100F57AFE /* CSMColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMColorManager.swift; sourceTree = "<group>"; };
+		67C5D19721AF3D8100F57AFE /* CSMNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMNumber.swift; sourceTree = "<group>"; };
+		67C5D19821AF3D8100F57AFE /* CSMKeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMKeyChain.swift; sourceTree = "<group>"; };
+		67C5D19921AF3D8100F57AFE /* CSMLocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMLocalNotificationManager.swift; sourceTree = "<group>"; };
+		67C5D19A21AF3D8100F57AFE /* CSMImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMImage.swift; sourceTree = "<group>"; };
+		67C5D19B21AF3D8100F57AFE /* CSMJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMJSON.swift; sourceTree = "<group>"; };
+		67C5D19C21AF3D8100F57AFE /* CSMTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMTextField.swift; sourceTree = "<group>"; };
+		67C5D19D21AF3D8100F57AFE /* CSMButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMButton.swift; sourceTree = "<group>"; };
+		67C5D19E21AF3D8100F57AFE /* CSMImageDownloaded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMImageDownloaded.swift; sourceTree = "<group>"; };
+		67C5D19F21AF3D8100F57AFE /* CSMLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMLocationManager.swift; sourceTree = "<group>"; };
+		67C5D1A021AF3D8100F57AFE /* CSMUserAlters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMUserAlters.swift; sourceTree = "<group>"; };
+		67C5D1A121AF3D8100F57AFE /* CSMWebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMWebServiceManager.swift; sourceTree = "<group>"; };
+		67C5D1A221AF3D8100F57AFE /* CSMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMView.swift; sourceTree = "<group>"; };
+		67C5D1A321AF3D8100F57AFE /* CSMString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMString.swift; sourceTree = "<group>"; };
+		67C5D1AA21AF3F1E00F57AFE /* ViajesBE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViajesBE.swift; sourceTree = "<group>"; };
+		85B8412E734AA978F4EA317D /* Pods_ProyectoViajar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProyectoViajar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B273FCB0A3F50D2CE9A65647 /* Pods-ProyectoViajar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoViajar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProyectoViajar/Pods-ProyectoViajar.debug.xcconfig"; sourceTree = "<group>"; };
+		CAE7DB36C2F4203AC8F5E5F4 /* Pods-ProyectoViajar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoViajar.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProyectoViajar/Pods-ProyectoViajar.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67C5D15821AEE53800F57AFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50FE3826558A260077E6E06 /* Pods_ProyectoViajar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2958610F7CF8BE733DA29F52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85B8412E734AA978F4EA317D /* Pods_ProyectoViajar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F53B9B0F90B1ADE0DE109A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B273FCB0A3F50D2CE9A65647 /* Pods-ProyectoViajar.debug.xcconfig */,
+				CAE7DB36C2F4203AC8F5E5F4 /* Pods-ProyectoViajar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		67C5D15221AEE53800F57AFE = {
+			isa = PBXGroup;
+			children = (
+				67C5D18B21AF3CF100F57AFE /* WS */,
+				67C5D17721AEE58500F57AFE /* General */,
+				67C5D17621AEE57C00F57AFE /* DA */,
+				67C5D17521AEE57100F57AFE /* iPhone */,
+				67C5D17421AEE56900F57AFE /* BL */,
+				67C5D17321AEE56200F57AFE /* BE */,
+				67C5D15D21AEE53800F57AFE /* ProyectoViajar */,
+				67C5D15C21AEE53800F57AFE /* Products */,
+				3F53B9B0F90B1ADE0DE109A2 /* Pods */,
+				2958610F7CF8BE733DA29F52 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		67C5D15C21AEE53800F57AFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67C5D15B21AEE53800F57AFE /* ProyectoViajar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67C5D15D21AEE53800F57AFE /* ProyectoViajar */ = {
+			isa = PBXGroup;
+			children = (
+				67C5D18021AEF17500F57AFE /* GoogleService-Info.plist */,
+				67C5D15E21AEE53800F57AFE /* AppDelegate.swift */,
+				67C5D16821AEE53A00F57AFE /* Assets.xcassets */,
+				67C5D16A21AEE53A00F57AFE /* LaunchScreen.storyboard */,
+				67C5D16D21AEE53A00F57AFE /* Info.plist */,
+				67C5D16521AEE53800F57AFE /* ProyectoViajar.xcdatamodeld */,
+			);
+			path = ProyectoViajar;
+			sourceTree = "<group>";
+		};
+		67C5D17321AEE56200F57AFE /* BE */ = {
+			isa = PBXGroup;
+			children = (
+				67C5D1AA21AF3F1E00F57AFE /* ViajesBE.swift */,
+			);
+			path = BE;
+			sourceTree = "<group>";
+		};
+		67C5D17421AEE56900F57AFE /* BL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BL;
+			sourceTree = "<group>";
+		};
+		67C5D17521AEE57100F57AFE /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				67C5D18A21AF290100F57AFE /* recursos */,
+				67C5D17921AEE59B00F57AFE /* vistas */,
+				67C5D17821AEE59100F57AFE /* clases */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		67C5D17621AEE57C00F57AFE /* DA */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DA;
+			sourceTree = "<group>";
+		};
+		67C5D17721AEE58500F57AFE /* General */ = {
+			isa = PBXGroup;
+			children = (
+				67C5D19221AF3D8100F57AFE /* Helpers */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		67C5D17821AEE59100F57AFE /* clases */ = {
+			isa = PBXGroup;
+			children = (
+				67C5D18721AEF71F00F57AFE /* menu */,
+				67C5D18221AEF1F200F57AFE /* login */,
+			);
+			path = clases;
+			sourceTree = "<group>";
+		};
+		67C5D17921AEE59B00F57AFE /* vistas */ = {
+			isa = PBXGroup;
+			children = (
+				67C5D17A21AEE5BB00F57AFE /* Login.storyboard */,
+			);
+			path = vistas;
+			sourceTree = "<group>";
+		};
+		67C5D18221AEF1F200F57AFE /* login */ = {
+			isa = PBXGroup;
+			children = (
+				67C5D17C21AEE61C00F57AFE /* LoginViewController.swift */,
+				67C5D18321AEF20600F57AFE /* LogViewController.swift */,
+				67C5D18521AEF21300F57AFE /* RegistrarViewController.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		67C5D18721AEF71F00F57AFE /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				67C5D18821AEF73600F57AFE /* MenuViewController.swift */,
+				67C2804221B17C4800480BE8 /* ViajesTableViewCell.swift */,
+				67C2804821B1831500480BE8 /* ViajesViewController.swift */,
+				67C2804A21B1993600480BE8 /* DetalleViewController.swift */,
+			);
+			path = menu;
+			sourceTree = "<group>";
+		};
+		67C5D18A21AF290100F57AFE /* recursos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = recursos;
+			sourceTree = "<group>";
+		};
+		67C5D18B21AF3CF100F57AFE /* WS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WS;
+			sourceTree = "<group>";
+		};
+		67C5D19221AF3D8100F57AFE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				67C5D19321AF3D8100F57AFE /* CSMTextView.swift */,
+				67C5D19421AF3D8100F57AFE /* CSMLabel.swift */,
+				67C5D19521AF3D8100F57AFE /* CSMDateManager.swift */,
+				67C5D19621AF3D8100F57AFE /* CSMColorManager.swift */,
+				67C5D19721AF3D8100F57AFE /* CSMNumber.swift */,
+				67C5D19821AF3D8100F57AFE /* CSMKeyChain.swift */,
+				67C5D19921AF3D8100F57AFE /* CSMLocalNotificationManager.swift */,
+				67C5D19A21AF3D8100F57AFE /* CSMImage.swift */,
+				67C5D19B21AF3D8100F57AFE /* CSMJSON.swift */,
+				67C5D19C21AF3D8100F57AFE /* CSMTextField.swift */,
+				67C5D19D21AF3D8100F57AFE /* CSMButton.swift */,
+				67C5D19E21AF3D8100F57AFE /* CSMImageDownloaded.swift */,
+				67C5D19F21AF3D8100F57AFE /* CSMLocationManager.swift */,
+				67C5D1A021AF3D8100F57AFE /* CSMUserAlters.swift */,
+				67C5D1A121AF3D8100F57AFE /* CSMWebServiceManager.swift */,
+				67C5D1A221AF3D8100F57AFE /* CSMView.swift */,
+				67C5D1A321AF3D8100F57AFE /* CSMString.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67C5D15A21AEE53800F57AFE /* ProyectoViajar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67C5D17021AEE53A00F57AFE /* Build configuration list for PBXNativeTarget "ProyectoViajar" */;
+			buildPhases = (
+				24E9FA00EC06C51294AB034C /* [CP] Check Pods Manifest.lock */,
+				67C5D15721AEE53800F57AFE /* Sources */,
+				67C5D15821AEE53800F57AFE /* Frameworks */,
+				67C5D15921AEE53800F57AFE /* Resources */,
+				131CE1D4BEC50C6781B2D967 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProyectoViajar;
+			productName = ProyectoViajar;
+			productReference = 67C5D15B21AEE53800F57AFE /* ProyectoViajar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		67C5D15321AEE53800F57AFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "elvis villaca";
+				TargetAttributes = {
+					67C5D15A21AEE53800F57AFE = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 67C5D15621AEE53800F57AFE /* Build configuration list for PBXProject "ProyectoViajar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 67C5D15221AEE53800F57AFE;
+			productRefGroup = 67C5D15C21AEE53800F57AFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67C5D15A21AEE53800F57AFE /* ProyectoViajar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		67C5D15921AEE53800F57AFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C5D16C21AEE53A00F57AFE /* LaunchScreen.storyboard in Resources */,
+				67C5D18121AEF17500F57AFE /* GoogleService-Info.plist in Resources */,
+				67C5D16921AEE53A00F57AFE /* Assets.xcassets in Resources */,
+				67C5D17B21AEE5BB00F57AFE /* Login.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		131CE1D4BEC50C6781B2D967 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ProyectoViajar/Pods-ProyectoViajar-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProyectoViajar/Pods-ProyectoViajar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24E9FA00EC06C51294AB034C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProyectoViajar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67C5D15721AEE53800F57AFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C2804B21B1993600480BE8 /* DetalleViewController.swift in Sources */,
+				67C5D1AB21AF3F1E00F57AFE /* ViajesBE.swift in Sources */,
+				67C5D17D21AEE61C00F57AFE /* LoginViewController.swift in Sources */,
+				67C5D18921AEF73600F57AFE /* MenuViewController.swift in Sources */,
+				67C5D18621AEF21300F57AFE /* RegistrarViewController.swift in Sources */,
+				67C5D16721AEE53800F57AFE /* ProyectoViajar.xcdatamodeld in Sources */,
+				67C5D15F21AEE53800F57AFE /* AppDelegate.swift in Sources */,
+				67C5D18421AEF20600F57AFE /* LogViewController.swift in Sources */,
+				67C2804321B17C4800480BE8 /* ViajesTableViewCell.swift in Sources */,
+				67C2804921B1831500480BE8 /* ViajesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		67C5D16A21AEE53A00F57AFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67C5D16B21AEE53A00F57AFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		67C5D16E21AEE53A00F57AFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		67C5D16F21AEE53A00F57AFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67C5D17121AEE53A00F57AFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B273FCB0A3F50D2CE9A65647 /* Pods-ProyectoViajar.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProyectoViajar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = evilla.com.ProyectoViajar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		67C5D17221AEE53A00F57AFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAE7DB36C2F4203AC8F5E5F4 /* Pods-ProyectoViajar.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProyectoViajar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = evilla.com.ProyectoViajar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		67C5D15621AEE53800F57AFE /* Build configuration list for PBXProject "ProyectoViajar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67C5D16E21AEE53A00F57AFE /* Debug */,
+				67C5D16F21AEE53A00F57AFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67C5D17021AEE53A00F57AFE /* Build configuration list for PBXNativeTarget "ProyectoViajar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67C5D17121AEE53A00F57AFE /* Debug */,
+				67C5D17221AEE53A00F57AFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		67C5D16521AEE53800F57AFE /* ProyectoViajar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				67C5D16621AEE53800F57AFE /* ProyectoViajar.xcdatamodel */,
+			);
+			currentVersion = 67C5D16621AEE53800F57AFE /* ProyectoViajar.xcdatamodel */;
+			path = ProyectoViajar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 67C5D15321AEE53800F57AFE /* Project object */;
+}

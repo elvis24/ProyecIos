@@ -1,0 +1,6 @@
+framework module Pods_ProyectoViajar {
+  umbrella header "Pods-ProyectoViajar-umbrella.h"
+
+  export *
+  module * { export * }
+}
