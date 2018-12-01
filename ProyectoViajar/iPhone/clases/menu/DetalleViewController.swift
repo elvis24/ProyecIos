@@ -28,7 +28,7 @@ class DetalleViewController: UIViewController {
         
         self.lblNombre.text = objViaje.viaje_nombre
         self.lblCiudad.text = objViaje.viaje_ciudad
-        self.lblPrecio.text = objViaje.viaje_precio
+        self.lblPrecio.text = String(objViaje.viaje_precio)
         self.lblDescripcion.text = objViaje.viaje_descripcion
         self.imgViaje.image = objViaje.viaje_imagen
         

@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class ViajesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
 
     @IBOutlet weak var tlbViajes: UITableView!
+    
+    var ref: DatabaseReference!
     
     var arrayViajes = [ViajesBE]()
     
@@ -40,46 +43,35 @@ class ViajesViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let viaje1 = ViajesBE()
-        viaje1.viaje_nombre = "Machu Pichu"
-        viaje1.viaje_ciudad = "Cusco"
-        viaje1.viaje_precio = "100$"
-        viaje1.viaje_descripcion = "ciudad de las 7 maravillas"
-        viaje1.viaje_imagen = UIImage(named: "machu")!
-        viaje1.viaje_latitud = -33.86
-        viaje1.viaje_longitud = 151.20
+        self.ref = Database.database().reference()
         
-        let viaje2 = ViajesBE()
-        viaje2.viaje_nombre = "Mancora"
-        viaje2.viaje_ciudad = "Piura"
-        viaje2.viaje_precio = "1000$"
-        viaje2.viaje_descripcion = "Ricas playas para disfrutar"
-        viaje2.viaje_imagen = UIImage(named: "mancora")!
-        viaje2.viaje_latitud = -33.86
-        viaje2.viaje_longitud = 151.20
-        
-        let viaje3 = ViajesBE()
-        viaje3.viaje_nombre = "Mancora"
-        viaje3.viaje_ciudad = "Piura"
-        viaje3.viaje_precio = "1000$"
-        viaje3.viaje_descripcion = "Ricas playas para disfrutar"
-        viaje3.viaje_imagen = UIImage(named: "mancora")!
-        viaje3.viaje_latitud = -33.86
-        viaje3.viaje_longitud = 151.20
-        
-        let viaje4 = ViajesBE()
-        viaje4.viaje_nombre = "Cañon del Colca"
-        viaje4.viaje_ciudad = "Arequipa"
-        viaje4.viaje_precio = "1000$"
-        viaje4.viaje_descripcion = "Bonitas montañas para pasear"
-        viaje4.viaje_imagen = UIImage(named: "colca")!
-        viaje4.viaje_latitud = -33.86
-        viaje4.viaje_longitud = 151.20
-        
-        self.arrayViajes.append(viaje1)
-        self.arrayViajes.append(viaje2)
-        self.arrayViajes.append(viaje3)
-        self.arrayViajes.append(viaje4)
+        let query = self.ref.child("viajes")
+      
+            query.observe(DataEventType.value, with: { dataSnapshot in
+                
+                if dataSnapshot.childrenCount > 0 {
+                    
+                    //clearing the list
+                    self.arrayViajes.removeAll()
+                for viajeSnapshot in dataSnapshot.children.allObjects as! [DataSnapshot] {
+                    let viajeObject = viajeSnapshot.value as? [String: AnyObject]
+                    
+                    let current_viaje = ViajesBE()
+                    
+                    current_viaje.viaje_nombre = viajeSnapshot.key
+                    current_viaje.viaje_ciudad = viajeObject?["ciudad"] as! String
+                    current_viaje.viaje_descripcion = viajeObject?["descripcion"] as! String
+                    current_viaje.viaje_precio = viajeObject?["precio"] as! Double
+                    let current_image = viajeObject?["imagen"] as! String
+                    current_viaje.viaje_imagen = UIImage(named: current_image)!
+                    current_viaje.viaje_longitud = viajeObject?["longitud"] as! Double
+                    current_viaje.viaje_latitud = viajeObject?["latitud"] as! Double
+                    
+                    self.arrayViajes.append(current_viaje)
+                }
+                    self.tlbViajes.reloadData()
+                }
+            })
         
 
         
