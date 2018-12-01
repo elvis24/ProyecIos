@@ -18,6 +18,8 @@ class LocationViewController: UIViewController {
     var location_title: String = "Sydney"
     
     var currentZoom: Float = 6.0
+    
+    var objMap : ViajesBE!
 
     override func viewDidLoad() {
         super.viewDidLoad()

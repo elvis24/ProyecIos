@@ -39,6 +39,12 @@ class DetalleViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "LocationViewController"{
+            let controller = segue.destination as! LocationViewController
+            controller.objMap = sender as! ViajesBE
+        }
+    }
     
     
 

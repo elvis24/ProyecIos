@@ -20,6 +20,7 @@
 		67C5D18621AEF21300F57AFE /* RegistrarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5D18521AEF21300F57AFE /* RegistrarViewController.swift */; };
 		67C5D18921AEF73600F57AFE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5D18821AEF73600F57AFE /* MenuViewController.swift */; };
 		67C5D1AB21AF3F1E00F57AFE /* ViajesBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C5D1AA21AF3F1E00F57AFE /* ViajesBE.swift */; };
+		67EE28A521B214DB0031F98D /* ViajesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EE28A421B214DB0031F98D /* ViajesTableViewController.swift */; };
 		B50FE3826558A260077E6E06 /* Pods_ProyectoViajar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B8412E734AA978F4EA317D /* Pods_ProyectoViajar.framework */; };
 		D7A4E32121B1E3D6008C038F /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A4E32021B1E3D6008C038F /* LocationViewController.swift */; };
 		D7EF61A221B1C8CA0089E2E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7EF61A121B1C8CA0089E2E3 /* GoogleService-Info.plist */; };
@@ -58,6 +59,7 @@
 		67C5D1A221AF3D8100F57AFE /* CSMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMView.swift; sourceTree = "<group>"; };
 		67C5D1A321AF3D8100F57AFE /* CSMString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSMString.swift; sourceTree = "<group>"; };
 		67C5D1AA21AF3F1E00F57AFE /* ViajesBE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViajesBE.swift; sourceTree = "<group>"; };
+		67EE28A421B214DB0031F98D /* ViajesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViajesTableViewController.swift; sourceTree = "<group>"; };
 		85B8412E734AA978F4EA317D /* Pods_ProyectoViajar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProyectoViajar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B273FCB0A3F50D2CE9A65647 /* Pods-ProyectoViajar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoViajar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProyectoViajar/Pods-ProyectoViajar.debug.xcconfig"; sourceTree = "<group>"; };
 		CAE7DB36C2F4203AC8F5E5F4 /* Pods-ProyectoViajar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoViajar.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProyectoViajar/Pods-ProyectoViajar.release.xcconfig"; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				67C2804821B1831500480BE8 /* ViajesViewController.swift */,
 				67C2804A21B1993600480BE8 /* DetalleViewController.swift */,
 				D7A4E32021B1E3D6008C038F /* LocationViewController.swift */,
+				67EE28A421B214DB0031F98D /* ViajesTableViewController.swift */,
 			);
 			path = menu;
 			sourceTree = "<group>";
@@ -366,15 +369,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ProyectoViajar/Pods-ProyectoViajar-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
 			);
@@ -401,6 +400,7 @@
 				67C5D18421AEF20600F57AFE /* LogViewController.swift in Sources */,
 				67C2804321B17C4800480BE8 /* ViajesTableViewCell.swift in Sources */,
 				67C2804921B1831500480BE8 /* ViajesViewController.swift in Sources */,
+				67EE28A521B214DB0031F98D /* ViajesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
