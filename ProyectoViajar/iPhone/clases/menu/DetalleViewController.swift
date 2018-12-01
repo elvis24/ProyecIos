@@ -42,7 +42,7 @@ class DetalleViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "LocationViewController"{
             let controller = segue.destination as! LocationViewController
-            controller.objMap = sender as! ViajesBE
+            controller.objMap = self.objViaje
         }
     }
     

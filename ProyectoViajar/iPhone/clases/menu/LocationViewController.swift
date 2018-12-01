@@ -25,15 +25,15 @@ class LocationViewController: UIViewController {
         super.viewDidLoad()
         
         
-        let camera = GMSCameraPosition.camera(withLatitude: self.position_latitude, longitude: self.position_longitude, zoom: self.currentZoom)
+        let camera = GMSCameraPosition.camera(withLatitude: self.objMap.viaje_latitud, longitude: self.objMap.viaje_longitud, zoom: self.currentZoom)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         view = mapView
         
         // Creates a marker in the center of the map.
         let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: self.position_latitude, longitude: self.position_longitude)
-        marker.title = self.location_title
-        // marker.snippet = "Australia"
+        marker.position = CLLocationCoordinate2D(latitude: self.objMap.viaje_latitud, longitude: self.objMap.viaje_longitud)
+        marker.title = self.objMap.viaje_nombre
+        marker.snippet = self.objMap.viaje_ciudad
         marker.map = mapView
 
         // Do any additional setup after loading the view.
